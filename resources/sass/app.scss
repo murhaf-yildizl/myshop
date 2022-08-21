@@ -1,0 +1,177 @@
+// Fonts
+//@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import '~jquery-ui/themes/base/all.css';
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+
+.navbar>.container, .navbar>.container-fluid {
+    background-color: firebrick;
+    height:60px;
+     }
+
+     .navbar-light .navbar-brand {
+    color: aliceblue;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: burlywood;
+}
+
+.dropdown-item {
+    display: table-cell;
+    width: 100%;
+    padding: 0.25rem 1rem;
+    clear: both;
+    font-weight: 400;
+    color: #d81414;
+    text-align: start;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 1;
+  }
+
+.btn-primary {
+
+    background-color: mediumseagreen;
+    border-color: brown;
+    height: 50px;
+    //width: 200px;
+    font-size: 16px;
+//    align-content:
+
+    color: white;
+
+}
+
+.alert-primary {
+    color: green;
+    background-color:#f3f3f3;
+    border-color: #b6d4fe;
+    text-align: center;
+  }
+
+  .card-header {
+    //padding: 0.5rem 1rem;
+    //margin-bottom: 0;
+    background-color: beige;
+    color:red;
+    //border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+  .text-center {
+    //text-align: center!important;
+    color: crimson;
+}
+.text-styling{
+  color: crimson;
+}
+
+
+.alert{
+
+  //height:500px;
+  align-content: center;
+}
+
+
+
+.img-thumbnail{
+  height:250px;
+}
+
+
+
+
+.toast.error.bg-light {
+   background-color: red !important;
+   border-radius: 0.4rem;
+   color: #ffffff;
+   font-size: 18px;
+}
+
+.toast.success.bg-light {
+    background-color: #5ccb49 !important;
+    border-radius: 0.4rem;
+    color: #ffffff;
+    font-size: 18px;
+
+}
+
+      .toast-title{
+
+          color:red;
+
+      }
+
+      span.btns-span {
+          position: absolute;
+          right:10px;
+          bottom:5px;
+          color: red;
+      }
+
+
+
+      span.btns-span span:first-child{
+        margin-right:10px;
+      }
+
+
+span.btns-span span:first-child a{
+  color:green;
+}
+
+span.btns-span span:last-child a{
+  color:red;
+}
+
+
+button.modal-btns{
+    width: 80px;
+    height: 40px;
+    background-color: crimson;
+    color: aliceblue;
+
+}
+
+
+
+.modal-header{
+  background: lemonchiffon;
+  color: red;
+
+}
+
+.modal-footer {
+    place-content: center
+}
+.modal-body{
+  color: crimson;
+  font-size: larger;
+}
+
+
+.search-form {
+    text-align-last: right;
+    margin-top: -35;
+}
+
+
+
+button#search_icon {
+    background: transparent;
+    border: none;
+    color: red;
+}
+
+a.delete_image{
+    position: absolute;
+    margin-top: 20;
+    margin-left: -30px;
+    color:red;
+}
