@@ -9,7 +9,9 @@ use App\Models\Option;
 use App\Models\Optionlist;
 use App\Models\Image;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\URL;
 use Session;
+use Storage;
 
 class ProductController extends Controller
 {
@@ -84,12 +86,19 @@ else $product=Product::find($product_id);
 if($req->hasFile('files'))
 {
   $images=$req->file('files');
+
+      $i=1;
+
       foreach ($images as $image)
        {
-        $path=$image->store('public');
-        $img=new Image();
 
-        $img->url=$path;
+
+      //$path=URL::to('/').'/storage/public/'.$fname;
+      // $base = Storage::disk('public')->getAdapter()->getPathPrefix();
+
+       $path=$image->store('public');
+         $img=new Image();
+         $img->url=$path;
         $img->product_id=$product_id;
         $img->title="";
         $img->save();

@@ -17,8 +17,8 @@
                     <div class="col-md-6 offset-3">
                     <input class="btn-primary form-control" type="submit" name="" value="Add New Product"/>
                   </div>
-                    </div>
                     </form>
+                   </div>
 
                   <div class="row">
                    @foreach($products as $product)
@@ -28,8 +28,8 @@
                     <div class="alert alert-primary " role="alert">{{$product->name}} : Quantity= {{$product->available}}
 
                         <h5>Category: {{$product->categories->name}}</h5>
-                          @if(count($product->images)>0)
-                            <img class="img-thumbnail " src="{{asset('storage/'.$product->images[0]->url)}}"/>
+                           @if(count($product->images)>0)
+                             <img class="img-thumbnail " src="{{asset('storage/'.$product->images[0]->url)}}"/>
 
                          @endif
 

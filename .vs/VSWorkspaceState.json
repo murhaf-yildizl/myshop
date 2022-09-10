@@ -2,9 +2,15 @@
   "ExpandedNodes": [
     "",
     "\\app",
+    "\\app\\Http",
+    "\\app\\Http\\Controllers",
+    "\\app\\Http\\Controllers\\Api",
     "\\database",
-    "\\database\\migrations"
+    "\\database\\migrations",
+    "\\storage",
+    "\\storage\\app",
+    "\\storage\\app\\public"
   ],
-  "SelectedNode": "\\database\\migrations\\2019_08_19_000000_create_failed_jobs_table.php",
+  "SelectedNode": "\\.env",
   "PreviewInSolutionExplorer": false
 }

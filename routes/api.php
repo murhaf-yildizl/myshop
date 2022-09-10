@@ -32,6 +32,8 @@ Route::get('getusers',['App\Http\Controllers\Api\UserController','index']);
 Route::post('auth/register',['App\Http\Controllers\Api\AuthController','register']);
 Route::post('auth/login',['App\Http\Controllers\Api\AuthController','login']);
 
+Route::get('getimage/{url}',['App\Http\Controllers\Api\ImageController','get_image']);
+
 Route::group(['auth:api'] ,function() {
 
 
