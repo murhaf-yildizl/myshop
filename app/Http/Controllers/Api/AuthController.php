@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Api;
 
+use http\Env\Response;
 use Illuminate\Support\Facades\Hash;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
@@ -50,11 +51,15 @@ public function login(Request $req)
       {
         $user=User::where('email',$email)->first();
         return new UserApiResource($user);
+
       }
 
-    return [
-      'error!! the user credentials are not found!'
+
+    $message=[
+    'message'=>'error!! the user credentials are not found!'
     ];
+      return  \response($message,401);
+
   // code...
 }
 
